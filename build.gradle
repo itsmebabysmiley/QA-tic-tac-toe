@@ -9,6 +9,14 @@ repositories {
     mavenCentral()
 }
 
+sourceSets {
+    defaultTest {
+        java {
+            srcDir file('src/test/java')
+        }
+    }
+}
+
 configurations {
     defaultTestCompile.extendsFrom testCompile
     defaultTestImplementation.extendsFrom testImplementation
@@ -16,6 +24,7 @@ configurations {
 }
 
 dependencies {
+    implementation 'org.testng:testng:7.1.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testImplementation "org.junit.jupiter:junit-jupiter:5.8.1"
     testImplementation "org.assertj:assertj-core:3.22.0"
