@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'org.qa'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    defaultTestCompile.extendsFrom testCompile
+    defaultTestImplementation.extendsFrom testImplementation
+    defaultTestRuntime.extendsFrom testRuntime
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testImplementation "org.junit.jupiter:junit-jupiter:5.8.1"
+    testImplementation "org.assertj:assertj-core:3.22.0"
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testCompile "org.assertj:assertj-core:3.22.0"
+}
+
+test {
+    useJUnitPlatform()
+}
