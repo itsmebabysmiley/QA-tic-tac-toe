@@ -28,23 +28,56 @@ public class BoardTest {
     }
 
     /**
+     * This method tests move are movable or not.
+     */
+    @Test
+    public void testMove(){
+        //T,0,0
+        boolean expectMove = board.move(0);
+        assertThat(expectMove).isTrue();
+        //F,0,0
+        expectMove = board.move(0);
+        assertThat(expectMove).isFalse();
+    }
+
+    /**
      * This test method check whether reset() work correctly or not.
      */
     @Test
     public void testReset(){
-        //T1(True,X,Y,0)
-
-        board.move(1); //x
-        board.move(0); //y
+        //(T,X,X,0)
+        board.move(0); //x
+        board.move(1); //y
         board.move(2); //x
-        board.move(4); //y
-        board.move(3); //x
-        board.move(6); //y
+        board.move(3); //y
+        board.move(4); //x
+        board.move(7); //y
         board.move(5); //x
-        board.move(8); //y
-        System.out.println(board.toString());
-//        Boolean isGameOver = board.isGameOver();
-//        System.out.println(isGameOver);
+        board.move(6); //y
+        board.move(8); //x
+        board.reset();
+        boolean expectGameOver = board.isGameOver();
+        assertFalse(expectGameOver);
+        Board.State expectTurn = board.getTurn();
+        assertThat(expectTurn).isEqualTo(Board.State.X);
+        Exception expectWinner =
+                assertThrows(IllegalStateException.class, ()->{
+                    board.getWinner();
+                });
+        assertTrue(expectWinner.getMessage().contains("TicTacToe is not over yet."));
+        HashSet<Integer> expectAvailableMove = board.getAvailableMoves();
+        assertEquals(9,expectAvailableMove.size());
+
+        board = new Board();
+        //(F,X,Blank,8)
+        board.move(0); //x
+        board.move(1); //y
+        board.move(2); //x
+        board.move(3); //y
+        board.move(4); //x
+        board.move(7); //y
+        board.move(5); //x
+        board.move(6); //y
 //        Exception expectException =
 //                assertThrows(IllegalStateException.class, ()->{
 //                    board.getWinner();

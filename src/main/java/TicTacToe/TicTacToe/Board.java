@@ -48,7 +48,7 @@ public class Board {
     /**
      * Restart the game with a new blank board.
      */
-    void reset () {
+    public void reset () {
         moveCount = 0;
         gameOver = false;
         playersTurn = State.X;

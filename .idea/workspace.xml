@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ca0bcae-1878-4064-8204-a129f956543a" name="Changes" comment="a">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="0ca0bcae-1878-4064-8204-a129f956543a" name="Changes" comment="2 test cases with only 1 completed.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ArtificiallntelligenceTest/AlgorithmsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ArtificiallntelligenceTest/RandomTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-description/unitTest-spec.md" beforeDir="false" afterPath="$PROJECT_DIR$/project-description/unitTest-spec.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TicTacToe/TicTacToe/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TicTacToe/TicTacToe/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TicTacToeTest/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TicTacToeTest/BoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TicTacToeTest/ConsoleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TicTacToeTest/ConsoleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +67,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -93,48 +98,22 @@
       <recent name="$PROJECT_DIR$/src/main/java/tictactoe" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BoardTest.testReset">
-    <configuration name="test-tic-tac-toe [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="test-tic-tac-toe [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.AlgorithmsTest.testRandom">
+    <configuration name="AlgorithmsTest.testRandom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-tic-tac-toe.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArtificiallntelligenceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ArtificiallntelligenceTest" />
+      <option name="MAIN_CLASS_NAME" value="ArtificiallntelligenceTest.AlgorithmsTest" />
+      <option name="METHOD_NAME" value="testRandom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-tic-tac-toe.test" />
@@ -167,6 +146,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BoardTest.testMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-tic-tac-toe.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TicTacToeTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TicTacToeTest" />
+      <option name="MAIN_CLASS_NAME" value="TicTacToeTest.BoardTest" />
+      <option name="METHOD_NAME" value="testMove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BoardTest.testReset" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-tic-tac-toe.test" />
       <extension name="coverage">
@@ -184,19 +179,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.test-tic-tac-toe [clean]" />
-      <item itemvalue="Gradle.test-tic-tac-toe [test]" />
-      <item itemvalue="JUnit.BoardTest" />
       <item itemvalue="JUnit.BoardTest.testBoard" />
       <item itemvalue="JUnit.BoardTest.testReset" />
+      <item itemvalue="JUnit.BoardTest.testMove" />
+      <item itemvalue="JUnit.BoardTest" />
+      <item itemvalue="JUnit.AlgorithmsTest.testRandom" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AlgorithmsTest.testRandom" />
         <item itemvalue="JUnit.BoardTest.testReset" />
-        <item itemvalue="JUnit.BoardTest.testBoard" />
-        <item itemvalue="Gradle.test-tic-tac-toe [test]" />
-        <item itemvalue="Gradle.test-tic-tac-toe [clean]" />
         <item itemvalue="JUnit.BoardTest" />
+        <item itemvalue="JUnit.BoardTest.testMove" />
+        <item itemvalue="JUnit.BoardTest.testBoard" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +205,8 @@
       <updated>1664774712648</updated>
       <workItem from="1664774714305" duration="2726000" />
       <workItem from="1664777473084" duration="2298000" />
-      <workItem from="1664795138393" duration="5867000" />
+      <workItem from="1664795138393" duration="7303000" />
+      <workItem from="1664864254620" duration="10515000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1664777929943</created>
@@ -219,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664777929943</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2 test cases with only 1 completed.">
+      <created>1664802480536</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664802480536</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +241,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="2 test cases with only 1 completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="2 test cases with only 1 completed." />
   </component>
 </project>
